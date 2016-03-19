@@ -1,0 +1,28 @@
+
+
+.bead{
+    height:50px;
+    width:50px;
+    background-color: crimson;
+    border-radius: 50%;
+    box-shadow: 0px -11px 23px -3px black inset;
+    float: left;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+.toRight{
+    float: right;
+}
+
+.row{
+    clear: both;
+    border:5px grey solid;
+}
+
+#raam{
+    margin-top: 50px;
+    border: outset burlywood 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
