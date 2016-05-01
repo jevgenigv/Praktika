@@ -1,0 +1,33 @@
+CREATE TABLE jgavrilo_loomaaed(
+id INTEGER PRIMARY KEY AUTO_INCREMENT ,
+nimi VARCHAR( 50 ) ,
+vanus INTEGER,
+liik VARCHAR( 50 ) ,
+puur INTEGER
+)
+
+INSERT INTO  `jgavrilo_loomaaed` (  `id` ,  `nimi` ,  `vanus` ,  `liik` ,  `puur` ) 
+VALUES ( 0,  'kass', 4,  'imetaja', 1 ),
+( 2,  'koer', 7,  'imetaja', 3 ) , 
+( 3,  'elefant', 31,  'imetaja', 5 ) , 
+( 4,  'krokodiil', 6,  'roomaja', 5 ) , 
+( 5,  'ahv', 15,  'imetaja', 3 )
+
+SELECT  `nimi` ,  `puur` 
+FROM  `jgavrilo_loomaaed` 
+WHERE puur =5
+
+SELECT  `nimi` ,  `vanus` 
+FROM  `jgavrilo_loomaaed` 
+ORDER BY vanus ASC 
+LIMIT 1
+
+SELECT MIN( vanus ) , MAX( vanus ) 
+FROM  `jgavrilo_loomaaed`
+
+SELECT  `puur` , COUNT( puur ) 
+FROM  `jgavrilo_loomaaed` 
+GROUP BY puur
+
+UPDATE  `jgavrilo_loomaaed` 
+SET  `vanus` = vanus +1
